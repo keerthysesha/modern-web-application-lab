@@ -1,0 +1,328 @@
+AIM:
+to create a portfolio using html and css.
+
+PROGRAM:
+HTML CODE:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="cv.css">
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="name">
+                <h2 class="text">PORTFOLIO</h2>
+            </div>
+           <div class="menu">
+            <p>HOME</p>
+           </div>
+           <div class="menu1">
+            <p>SKILLS</p>
+           </div>
+           <div class="menu2">
+            <p>WORK</p>
+           </div>
+           <div class="menu3">
+            <p>CONTACT</p>
+            </div>
+           <div class="book">
+            <input type="submit" value="ABOUT US"  style="background-color: cornsilk;">
+           </div>
+         </div>
+         <div class="main_content">
+            <div class="content1">
+            <h3>HI THERE!<br> <br>I AM KEERTHY S .<br> <br> WELCOME TO MY <br>PORTFOLIO WEBSITE.</h3>
+            </div>
+            <div class="img">
+                <img src="pic1.jpg" width="300px" height="600px">
+            </div>
+            <div class="cont">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="contact">
+                <b>Email: </b>keerthyseshasayanam30@gmail.com<br><br>
+                <b>Phone No: </b>8056828289<br> <br>
+                <b>Address:</b> No:268,VGP Nagar,Mogappair,Chennai-37<br><br>
+            </div>
+            <div class="skill">
+                <h2>SKILLS</h2>
+            </div>
+            <div class="skills">
+                <p>Web Design with HTML , CSS AND JAVA</p>
+                <p>Python</p>
+                <p>Programming in c</p>
+                <p>C++</p>
+                <p>FROND END DEVELOPER</p>
+            </div>
+            <div class="edu">
+                <h2>EDUCATION</h2>
+            </div>
+            <div class="education">
+                <p><b>10th standard- </b>Velammal matri hr.sec.school - 2019 - 88.8%</p>
+                <p><b></b>11th standard- </b>Velammal matri hr.sec.school - 2020 - 82.5%</p>
+                <p><b></b>UG-</b> Saveetha Engineering college- 2025 - <br>8.50%</p>
+            </div>
+            <div class="lang">
+                <h2>LANGUAGES</h2>
+            </div>
+            <div class="languages">
+                <p>English , Telugu</p>
+                <p>Tamil , Hindi</p>
+                <p>French</p>
+            </div>
+            <div class="hob">
+                <h2>HOBBIES</h2>
+            </div>
+            <div class="hobbies">
+                <p>Painting , watching series.</p>
+                <p>Drawing , Reading books.</p>
+            </div>
+            <div class="ps">
+                <h2>PERSONAL DETAILS</h2>
+            </div>
+            <div class="personal">
+                <b>Name:</b> Keerthy S<br><br>
+                <b>Father's Name: </b>Seshasayanam R<br><br>
+                <b>Year:</b> 2nd year<br><br>
+                <b>Gender: </b>Female<br><br>
+            </div>
+            <div class="color">
+            </div>
+            <div class="final">
+                <h5>PORTFOLIO</h5>
+            </div>
+            <div class="write">
+                <p><u><b>home</b></u></p>
+            </div>
+            <div class="write1">
+                <p><u><b>projects</b></u></p>
+            </div>
+            <div class="write2">
+                <p><u><b>team</b></u></p>
+            </div>
+            <div class="write3">
+                <p><u><b>contact us</b></u></p>
+            </div>
+            <div class="image2">
+                <img src="copyright.png" width="20px" height="20px">
+            </div>
+            <div class="content">
+                <p>2019 Best Tuning. All rights reserved</p>
+            </div>
+            <div class="fb">
+                <img src="facebook icon.png" width="20px" height="20px">
+            </div>
+            <div class="linkedin">
+                <img src="linkedin.png" width="20px" height="20px">
+            </div>
+         </div>
+    </body>
+</html>    
+
+CSS CODE:
+*{
+    background-color: cadetblue;
+}
+.name{
+    position:absolute;
+    font-size: 20px;
+    color:darkblue;
+    margin-left: 30px;
+    bottom:650px;
+}
+.menu{
+    position:absolute;
+    color: cornsilk ;
+    margin-left: 450px;
+    font-size: 20px;
+    bottom: 660px;
+}
+.menu1{
+    position:absolute;
+    color:cornsilk ;
+    margin-left: 600px;
+    font-size: 20px;
+    bottom: 660px;
+}
+
+.menu2{
+    position:absolute;
+    color:cornsilk;
+    margin-left: 750px;
+    bottom: 660px;
+    font-size: 20px;
+}
+.menu3{
+    position:absolute;
+    color:cornsilk ;
+    margin-left: 900px;
+    font-size: 20px;
+    bottom: 660px;
+}
+.book{
+    position:absolute;
+    margin-left: 1300px;
+    font-size: 20px;
+    bottom: 690px;
+}
+.content1{
+    position: absolute;
+    color:darkblue;
+    margin-top: 110px;
+    margin-left: 80px;
+    font-size: 40px;
+}
+.img{
+    margin-top: 100px;
+    margin-left: 980px;
+}
+.cont{
+    position: absolute;
+    color: darkblue;
+    margin-left: 110px;
+    margin-top: 110px;
+    font-size: 40px;
+}
+.contact{
+    position: absolute;
+    color: cornsilk;
+    margin-left: 650px;
+    font-size: 30px;
+    margin-top: 100px;
+}
+.skills{
+    position:absolute;
+    color: cornsilk;
+    margin-left: 110px;
+    margin-top: 380px;
+    font-size: 30px;
+}
+.skill{
+    position: absolute;
+    color: darkblue;
+    margin-top: 470px;
+    margin-left: 930px;
+    font-size: 40px;
+}
+.edu{
+    position:absolute;
+    color: darkblue;
+    margin-left: 110px;
+    margin-top: 920px;
+    font-size: 30px;
+}
+.education{
+    position: absolute;
+    color: cornsilk;
+    margin-top: 800px;
+    margin-left: 650px;
+    font-size: 40px;
+}
+.languages{
+    position:absolute;
+    color: cornsilk;
+    margin-left: 200px;
+    margin-top: 1300px;
+    font-size: 30px;
+}
+.lang{
+    position: absolute;
+    color: darkblue;
+    margin-top: 1350px;
+    margin-left: 800px;
+    font-size: 40px;
+}
+.hob{
+    position:absolute;
+    color: darkblue;
+    margin-left: 200px;
+    margin-top: 1660px;
+    font-size: 30px;
+}
+.hobbies{
+    position: absolute;
+    color: cornsilk;
+    margin-top: 1600px;
+    margin-left: 800px;
+    font-size: 40px;
+}
+.personal{
+    position:absolute;
+    color: cornsilk;
+    margin-left: 150px;
+    margin-top: 1900px;
+    font-size: 30px;
+}
+.ps{
+    position: absolute;
+    color: darkblue;
+    margin-top: 1950px;
+    margin-left: 700px;
+    font-size: 40px;
+}
+
+.final{
+    position: absolute;
+    color:darkblue ;
+    margin-top: 2200px;
+    margin-left:80px;
+    font-size: 30px;
+}
+.write{
+    position: absolute;
+    color: white;
+    margin-top: 2200px;
+    margin-left: 370px;
+    font-size: 30px;
+
+}
+.write1{
+    position: absolute;
+    color: white;
+    margin-top: 2200px;
+    margin-left: 470px;
+    font-size: 30px;
+}
+.write2{
+    position: absolute;
+    color: white;
+    margin-top: 2200px;
+    margin-left: 610px;
+    font-size: 30px;
+}
+.write3{
+    position: absolute;
+    color: white;
+    margin-top: 2200px;
+    margin-left: 720px;
+    font-size: 30px;
+}
+.image2{
+    position: absolute;
+    margin-top: 2240px ;
+    margin-left: 880px;
+}
+.content{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    margin-top: 2220px;
+    margin-left: 920px;
+    font-size: 20px;
+}
+.fb{
+    position: absolute;
+    margin-top: 2240px;
+    margin-left: 1245px;
+}
+.linkedin{
+    position: absolute;
+    margin-top: 2240px;
+    margin-left: 1290px;
+}
+
+RESULT:
+thus,creating a portfolio using html and css was successfully done.
