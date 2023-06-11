@@ -1,0 +1,147 @@
+AIM:
+To create the image carousel using react.
+
+ALGORITHM:
+Step 1: First open the vs code or any code editor.
+Step 2: Design your image carousel.
+Step 3: Type your html code.
+Step 4: Then type your css code according to your desire.
+Step 5: Execute the file and get the desired output.
+
+IMAGE CAROUSEL.JS:
+import React,{useState,useEffect,useRef} from "react"; 
+const ImageCarousel = () => { 
+ const [current, setCurrent] = useState(0); 
+ const ref = useRef(null); 
+ 
+ const next = () => { 
+ if ( current >= 3){ 
+ return; 
+ } 
+ else{ 
+ setCurrent(current + 1); 
+ } 
+ }; 
+ 
+ const previous = () => { 
+ if ( current === 0 ){ 
+ return; 
+ } 
+ else{ 
+ setCurrent(current - 1); 
+ } 
+ }; 
+ 
+ 
+ useEffect(() => { 
+ ref.current.style.transition = '0.5s'; 
+ ref.current.style.transform = `translateX(-${current}00%)`; 
+ }, [current]); 
+ 
+ return ( 
+ <>
+ <div className='page__body'>
+ <h2>Current Slide:{current}</h2>
+ <div className='frame'>
+ <div className='carousel__container' ref={ref}>
+ <div
+className='carousel__images'><h3>0</h3></div>
+ <div
+className='carousel__images'><h3>1</h3></div>
+ <div
+className='carousel__images'><h3>2</h3></div>
+ <div
+className='carousel__images'><h3>3</h3></div>
+ </div>
+ </div>
+ <div className='button-container'>
+ <div className='button'
+onClick={previous}>Left</div>
+ <div className='button' onClick={next}>Right</div>
+ </div>
+ 
+ </div>
+ </>
+ ); 
+}; 
+export default ImageCarousel; 
+ 
+APP.JS:
+import './App.css'; 
+import './styles/imagecarousel.css'; 
+import ImageCarousel from './components/ImageCarousel'; 
+function App() { 
+ return ( 
+ <>
+ 
+ <ImageCarousel/>
+ </>
+ ); 
+}; 
+export default App; 
+
+IMAGE CAROUSEL.CSS:
+imageCarousel.css 
+.page__body { 
+ width: 100vw; 
+ height: 100vh; 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ flex-direction: column; 
+ overflow: hidden; 
+ } 
+ .frame { 
+ border: 10px solid orange; 
+ width: 300px; 
+ height: 200px; 
+ overflow: hidden; 
+ } 
+ .carousel__container { 
+ display: flex; 
+ } 
+ .carousel__images { 
+ box-sizing: border-box; 
+ background: aqua; 
+ width: 300px; 
+ height: 200px; 
+ flex-shrink: 0; 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ } 
+ .button-container { 
+ display: flex; 
+ gap: 50px; 
+ } 
+ .button { 
+ background: #222; 
+ color: #fff; 
+ font-size: 16px; 
+ width: 50px; 
+ text-align: center; 
+ padding: 10px 20px; 
+ margin: 10px; 
+ user-select: none; 
+ cursor: pointer; 
+ border-radius: 6px; 
+ } 
+ .button-2 { 
+ width: 15px; 
+ height: 15px; 
+ border-radius: 15px; 
+ background: #E0E0E0; 
+ margin: 6px; 
+ cursor: pointer; 
+ } 
+ .button-2-container { 
+ display: flex; 
+ } 
+ .active { 
+ background: #999; 
+ } 
+ 
+OUTPUT:
+
+RESULT:
+thus the image carousel has been created.
