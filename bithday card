@@ -1,0 +1,53 @@
+AIM:
+To create a Birthday card using html and css.
+
+ALGORITHM:
+Step 1: First open the vs code or any code editor.
+Step 2: Design your Birthdat card.
+Step 3: Type your html code.
+Step 4: Then type your css code according to your desire.
+Step 5: Execute the file and get the desired output.
+
+CODE:
+<!DOCTYPE html>
+<head>
+ <title>Birthday Card</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com"
+crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Euphoria+Script&
+display=swap" rel="stylesheet">
+</head>
+<body style="height: 100vh; background-color: #FDF4F5; display: 
+flex; justify-content: center; align-items: center;">
+ <div>
+ <div style="border: #BA90C6 2px solid; height: 600px; 
+width: 900px; position: absolute; transform: rotate(3deg); 
+"></div>
+ <div style="position: relative; height: 600px;width: 
+900px; display: flex; justify-content: start; flex-direction: 
+column; align-items: center; border: #a020c4 2px solid; 
+background-color: #FDF4F5;">
+ <img src="https://www.pngkit.com/png/full/4-
+45756_birthday-png.png" alt="" style="height: 300px; width: 
+900px; object-fit: cover;">
+ <h1 style="color: #BA90C6; font-family:monospace; 
+font-size: 40px; margin: 0; line-height: 0px;">Happy</h1>
+ <h1 style=" font-family: 'Euphoria Script', 
+cursive; font-size: 124px; font-weight: 100; line-height: 
+100px; margin: 20px; ">Birthday</h1>
+ <i><p style="font-family: cursive; font-size: 20px; 
+max-width: 800px; text-align: center;">I wish nothing but 
+wonderful things on your special day. May the year shines 
+bright for you. Wishing your days are bessed throughout the 
+year.</p></i>
+ </div>
+ </div>
+</body>
+</html>
+
+OUTPUT:
+
+RESULT:
+Thus the birthday card using html and css has been created.
