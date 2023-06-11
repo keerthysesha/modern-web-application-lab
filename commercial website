@@ -1,0 +1,318 @@
+AIM:
+To create a commericial wbsite using html and css.
+
+ALGORITHM:
+Step 1: First open the vs code or any code editor.
+Step 2: Design your commericial websute.
+Step 3: Type ur html code.
+Step 4: Then type your css code according to your desire.
+Step 5: Execute the file and get the desired output.
+
+HTML CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.4.0/css/all.min.css" integrity="sha512-
+iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH
+0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,
+400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+rel="stylesheet">
+ <title>Document</title>
+</head>
+<body>
+ <div class="header__container">
+ <div class="header__contents">
+ <div class="logo__name"><h1>BEST TUNING </h1></div>
+ <div class="header__links">
+ <a class="links">home</a>
+ <a class="links">projects</a>
+ <a class="links">team</a>
+ <a class="links">contacts</a>
+ </div>
+ </div>
+ <div class="header__button">
+ <button class="appnmt__btn">Book an Appointment</button>
+ </div>
+ </div>
+ <div class="hero__section">
+ <div class="hero__content">
+ <h3 class="hero__title">TUNING PERFECTION</h3>
+ <p class="hero__desc">Tuning is an upgrade that unlocks hidden 
+potential of your car</p>
+ <button><i class="fa-solid fa-arrow-down"></i>Explore</button>
+ </div>
+ </div>
+ <div class="Tuning__container">
+ <div class="tuning__content">
+ <p class="hero__title">WHY DO YOU WANT IT?</p>
+ <h2 class="tuning__ques">What is Tuning and Why do You Want 
+it?</h2>
+ <p class="tuning__desc">Tuning is an upgrade to the software in 
+the vehicle's computer Customer software is installed that changes many 
+parameters that control the way the engine operates With proper tuning you can 
+increase both power and fuel economy.</p>
+ <div class="efficiency">
+ <div class="effc__card">
+ <i class="fa-solid fa-stopwatch effc__logo"></i>
+ <p class="logo__desc">A comprehensive tool for high 
+horsepower builds.</p>
+ </div>
+ <div class="effc__card">
+ <i class="fa-solid fa-gas-pump effc__logo"></i>
+ <p class="logo__desc">With proper tuning you can increase 
+fuel economy.</p>
+ </div>
+ </div>
+ </div>
+ <div class="tuning__visual">
+ <img src="https://cdn.wallpapersafari.com/28/73/mLJPuV.jpg" alt=""
+class="tuning__image">
+ </div>
+ </div>
+ <div class="last__section">
+ <div class="last__section__visual">
+ <img src="1681488975418.jpg" alt="" class="last__section__image">
+ </div>
+ <div class="last__section__content">
+ <p class="hero__title">ADVANTAGES</p>
+ <h2 class="tuning__ques">What can I Expect from Tuning?</h2>
+ <p class="tuning__desc">What can I Expect from Tuning?<br>Though 
+proper modification, it is possible to greatly increase the power output of 
+the vehicle. While at the same time improving safety and longevity of the 
+engines,divability, and smoothness.</p>
+ <div class="hp__container">
+ <div class="hp__card">
+ <h1 class="hp__title">20-35 hp</h1>
+ <div class="hyphen"></div>
+ <p class="hp__desc">roughly increase from a stage 1 
+tune</p>
+ </div>
+ <div class="hp__card">
+ <h1 class="hp__title">35-50 hp</h1>
+ <div class="hyphen"></div>
+ <p class="hp__desc">roughly increase from a stage 2 
+tune</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="footer">
+ <div class="logo__name"><h1>BEST TUNING </h1></div>
+ <div class="header__links">
+ <li class="links">home</li>
+ <li class="links">projects</li>
+ <li class="links">team</li>
+ <li class="links">contacts</li>
+ </div>
+ <div class="footer__contact">
+ <p class="footer__rights">@ 2019 Best Tuning. All rights 
+reserved.</p>
+ <a href=""><i class="fa-brands fa-facebook-f 
+contact__logo"></i></a>
+ <a href=""><i class="fa-brands fa-linkedin-in 
+contact__logo"></i></a>
+ </div>
+ </div>
+</body>
+</html>
+
+CSS CODE:
+style.css 
+* { 
+ margin: 0px; 
+ padding: 0; 
+ font-family: 'Roboto', sans-serif;; 
+} 
+.header__container { 
+ background-color: black; 
+ color: white; 
+ padding: 20px 200px; 
+ display: flex; 
+ justify-content: space-between; 
+} 
+.header__contents { 
+ display: flex; 
+} 
+.header__links { 
+ display: flex; 
+} 
+.logo__name { 
+ color: #ef440f; 
+ font-size: 10px; 
+ font-weight: 600; 
+} 
+.links { 
+ list-style: none; 
+ padding: 0px 20px; 
+} 
+.appnmt__btn { 
+ background-color: #ef440f; 
+ padding: 10px; 
+ border: none; 
+ border-radius: 10px; 
+ color: white; 
+} 
+.hero__section { 
+ background-image: url(Car-hero.jpg); 
+ height: 95vh; 
+ width: 100%; 
+ display: flex; 
+ justify-content: start; 
+ align-items: end; 
+} 
+.hero__content { 
+ margin-left: 200px; 
+} 
+.hero__desc { 
+ margin: 20px; 
+ font-size: 20px; 
+ line-height: 30px; 
+ max-width: 200px; 
+ color: #fff; 
+} 
+.hero__title { 
+ margin: 20px 20px; 
+ font-size: 12px; 
+ color: #fff; 
+ font-weight: 400; 
+} 
+i { 
+ color: #fff; 
+ font-size: 15px; 
+ font-weight: 300; 
+ padding: 5px; 
+} 
+button { 
+ margin:0px 5px; 
+ color: #fff; 
+ font-size: 15px; 
+ font-weight: 300; 
+ border: none; 
+ cursor: pointer; 
+ background-color: #000; 
+ padding: 10px; 
+ border-radius: 50px; 
+} 
+.Tuning__container { 
+ padding-top: 100px; 
+ display: flex; 
+ align-items: center; 
+ background-color: #000; 
+ padding-left: 200px; 
+} 
+.tuning__visual { 
+ height:500px; 
+ width:1000px; 
+} 
+.tuning__image { 
+ height: 100%; 
+ width: 100%; 
+} 
+.tuning__content { 
+ color: #fff; 
+ background-color: #000; 
+} 
+.tuning__ques { 
+ margin-left: 20px; 
+ max-width: 350px; 
+ font-size: 36px; 
+ font-weight: 500; 
+} 
+.tuning__desc { 
+ color: #fff; 
+ opacity: 0.8; 
+ font-size: 15px; 
+ margin: 20px; 
+ max-width: 450px; 
+ line-height: 25px; 
+} 
+.efficiency { 
+ display: flex; 
+} 
+.effc__card { 
+ margin-top: 20px; 
+ margin-left: 20px; 
+} 
+.effc__logo { 
+ color: #ef440f; 
+ font-size: 50px; 
+} 
+.logo__desc { 
+ margin-top: 10px; 
+ opacity: 0.7; 
+ line-height: 20px; 
+ font-size: 15px; 
+ max-width: 150px; 
+} 
+.last__section { 
+ padding-top: 100px; 
+ display: flex; 
+ color: #fff; 
+ background-color: #000; 
+} 
+.last__section__content{ 
+ display: flex; 
+ flex-direction: column; 
+ justify-content: center; 
+} 
+.last__section__visual { 
+ height:600px; 
+ width:700px; 
+} 
+.last__section__image { 
+ height: 100%; 
+ width: 100%; 
+} 
+.tuning__ques { 
+ color: #fff; 
+} 
+.hp__container { 
+ display: flex; 
+ margin: 20px; 
+} 
+.hp__title { 
+ font-size: 30px; 
+ font-weight: 500; 
+} 
+.hyphen { 
+ font-size: 30px; 
+ color: #ef440f; 
+} 
+.hp__card { 
+ margin-right: 20px; 
+} 
+.hyphen { 
+ margin: 10px 0px; 
+ height: 5px; 
+ width: 30px; 
+ background-color: #ef440f; 
+} 
+.hp__desc { 
+ font-size: 15px; 
+ max-width: 150px; 
+ opacity: 0.8; 
+} 
+.footer { 
+ color: #fff; 
+ padding: 20px 200px; 
+ background-color: #000; 
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+} 
+.footer__rights { 
+ padding-right:20px ; 
+} 
+.footer__contact { 
+ display: flex; 
+ align-items: center; 
+ 
+ OUTPUT:
+ 
+ RESULT:
+ Thus the desired commercial website has been created.
