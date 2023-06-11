@@ -1,0 +1,54 @@
+AIM:
+To create a bmi calculator using react.
+
+ALGORITHM:
+Step 1: Open the VS Code or any other code editor.
+Step 2: First get the inputs from the user.
+Step 3: Create a bmi function to do the bmi calculation.
+Step 4: next create another function to give the result.
+Step 5: Finally print the bmi.
+
+CODE:
+JAVASCRIPT CODE:
+var w=prompt("Enter your weight in Kgs");
+var h=prompt("Enter your height in ms");
+function bmi(h,w) 
+{
+    var bmi=w/(h*h);
+    return bmi;
+}
+var r=bmi(h,w);
+function result(r)
+{
+    if(r<18.5)
+    {
+
+        console.log("UNDERWEIGHT");
+    }
+    else if(r>=18.5 && r<=24.9)
+    {
+        console.log("NORMALWEIGHT");
+    }
+    else if(r>=25 && r<=29.9)
+    {
+        console.log("OVERWEIGHT");
+    }
+    else 
+    {
+        console.log("OBESE");
+    }
+}
+console.log("Your BMI is "+r);
+result(r);
+
+HTML CODE:
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width">
+        <title>bmi</title>
+    </head>
+    <body>
+        <script src="bmi.js"></script>
+    </body>
+</html>
