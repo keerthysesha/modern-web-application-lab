@@ -1,0 +1,64 @@
+AIM:
+To create a website layout using the flex box.
+
+ALGORITHM:
+Step 1: First open the vs code or any code editor.
+Step 2: Design your website layout.
+Step 3: Type your html code.
+Step 4: Then type your css code according to your desire.
+Step 5: Execute the file and get the desired output.
+
+HTML CODE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="style.css">
+ <title>Web layout using GridBox</title>
+</head>
+<body>
+ <div class="grid-container">
+ <div class="header">Header</div>
+ <div class="sidebar">Sidebar</div>
+ <div class="content">Content</div>
+ <div class="footer">Footer</div>
+</div>
+</body>
+</html>
+
+CSS CODE:
+Style.css: 
+.grid-container { 
+ display: grid; 
+ grid-template-columns: 1fr; 
+ grid-template-rows: auto 1fr auto; 
+ grid-template-areas: 
+ "header"
+ "content"
+ "footer"; 
+ min-height: 100vh; 
+} 
+.header { 
+ grid-area: header; 
+ background-color: #f2f2f2; 
+ padding: 20px; 
+} 
+.sidebar { 
+ grid-area: sidebar; 
+ background-color: #ddd; 
+ padding: 20px; 
+} 
+.content { 
+ grid-area: content; 
+ background-color: #fff; 
+ padding: 20px; 
+} 
+.footer { 
+ grid-area: footer; 
+ background-color: #f2f2f2; 
+ padding: 20px; 
+} 
+
+ OUTPUT:
+ 
+ RESULT:
+ Thus the website layout using the flex box has been reated.
