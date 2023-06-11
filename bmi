@@ -2,53 +2,131 @@ AIM:
 To create a bmi calculator using react.
 
 ALGORITHM:
-Step 1: Open the VS Code or any other code editor.
-Step 2: First get the inputs from the user.
-Step 3: Create a bmi function to do the bmi calculation.
-Step 4: next create another function to give the result.
-Step 5: Finally print the bmi.
+Step 1: First open the vs code or any code editor.
+Step 2: Design your bmi calculator.
+Step 3: Type your bmi.js code.
+Step 4: Then type your bmistyle.css code according to your desire.
+Step 5: Execute the file and get the desired output.
 
 CODE:
-JAVASCRIPT CODE:
-var w=prompt("Enter your weight in Kgs");
-var h=prompt("Enter your height in ms");
-function bmi(h,w) 
-{
-    var bmi=w/(h*h);
-    return bmi;
-}
-var r=bmi(h,w);
-function result(r)
-{
-    if(r<18.5)
-    {
+BMI.JS: 
+import React from "react"; 
+const BMI = () => { 
+ 
+ const BMIcalc = () => { 
+ 
+ const weight = document.getElementById("weight").value; 
+ const height = document.getElementById("height").value; 
+ const outputWrapper = document.getElementById("outputWrapper"); 
+ const outputLines = document.getElementsByTagName('h3'); 
+ const output = document.getElementById("output"); 
+ const outputMessage = document.getElementById("outputMessage"); 
+ const h = height/100; 
+ const result = weight/(h*h); 
+ console.log("REsult"+result); 
+ console.log(weight); 
+ console.log(height); 
+ let message =""; 
+ if(result<18.5){ 
+ message = "Under Weight"; 
+ } 
+ else if(result>=18.5 && result<=24.9){ 
+ message = "Normal Weight"; 
+ } 
+ else if(result>=25 && result<29.9) { 
+ message = "Over Weight"; 
+ } 
+ else { 
+ message = "Obese"; 
+ } 
+ 
+ output.innerHTML = `<p>BMI is ${result}</p>`; 
+ outputMessage.innerHTML = `<p> You are ${message} </p>`; 
+ outputWrapper.style.cssText = `display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ height: 200px;
+ width: 400px;
+ background-color: rgba(255, 255, 255, 0.3);
+ border-radius: 20px;`; 
+ output.style.cssText = `font-size: 24px;color: #222;`; 
+ outputMessage.style.cssText = `font-size: 24px;color: #222;`; 
+ }; 
+ return ( 
+ <div className="wrapper">
+ <h1>BMI Calculator</h1>
+ <div>
+ <input type="number" className="bmiInput" placeholder="Enter 
+your weight" id="weight"/> 
+ <input type="number" className="bmiInput" placeholder="Enter 
+your height" id="height"/> 
+ </div>
+ 
+ <input type="submit" className="submitBtn" value="Calculate"
+onClick={BMIcalc}/>
+ <div className="outputWrapper" id="outputWrapper">
+ <h3 id="output" ></h3>
+ <h3 id="outputMessage"></h3>
+ </div>
+ </div>
+ ); 
+ 
+}; 
+export default BMI; 
 
-        console.log("UNDERWEIGHT");
-    }
-    else if(r>=18.5 && r<=24.9)
-    {
-        console.log("NORMALWEIGHT");
-    }
-    else if(r>=25 && r<=29.9)
-    {
-        console.log("OVERWEIGHT");
-    }
-    else 
-    {
-        console.log("OBESE");
-    }
-}
-console.log("Your BMI is "+r);
-result(r);
+APP.JS:
+import './styles/bmiStyle.css'; 
+import ParentComponent from './components/ParentComponent'; 
+import BMI from './components/BMI'; 
+function App() { 
+ return ( 
+ <>
+ <BMI/>
+ </>
+ ); 
+}; 
+export default App; 
 
-HTML CODE:
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"><meta name="viewport" content="width=device-width">
-        <title>bmi</title>
-    </head>
-    <body>
-        <script src="bmi.js"></script>
-    </body>
-</html>
+BMISTYLE.CSS:
+* { 
+ margin: 0; 
+ padding: 0; 
+} 
+.wrapper { 
+ height: 100vh; 
+ width: 100vw; 
+ display: flex; 
+ justify-content: center; 
+ flex-direction: column; 
+ align-items: center; 
+ gap: 20px; 
+ background-image: linear-gradient(#fc4a1a, #f7b733 ); 
+} 
+.wrapper h1 { 
+ color: #222; 
+} 
+.bmiInput{ 
+ font-size: 16px; 
+ padding: 10px; 
+ width: 250px; 
+ border-radius: 6px; 
+ border: none; 
+ margin: 10px; 
+} 
+.bmiInput:hover { 
+ border: solid #fc4a1a 2px; 
+} 
+.submitBtn { 
+ font-size: 16px; 
+ color: #fc4a1a; 
+ padding: 8px 20px ; 
+ border: none; 
+ border-radius: 20px; 
+} 
+
+OUTPUT:
+
+RESULT:
+Thus the bmi calculator was created.
