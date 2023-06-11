@@ -1,0 +1,117 @@
+AIM:
+To create a gliding box using the css animation.
+
+ALGORITHM:
+Step 1: First open the vs code or any code editor.
+Step 2: Design your gliding box.
+Step 3: Type your html code.
+Step 4: Then type your css code according to your desire.
+Step 5: Execute the file and get the desired output.
+
+
+CODE:
+HTML CODE:
+<!DOCTYPE html>
+<head>
+ <link rel="stylesheet" href="style.css">
+ <title>Document</title>
+</head>
+<body>
+ <div class="card__container">
+ <div class="card">
+ <h3 class="card__title">SIMILAR POST</h3>
+ <P class="card__description">How I recreated a polaroid 
+camera with css gradient only</P>
+ </div>
+ </div>
+</body>
+</html>
+
+STYLE.CSS:
+Style.css 
+* { 
+ margin: 0; 
+ padding: 0; 
+} 
+.card__container { 
+ height: 100vh; 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ background-color: #1a2423; 
+} 
+.card__title { 
+ color: #00ffff; 
+ font-size: 12px; 
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 
+sans-serif; 
+ padding: 20px 10px 5px 10px; 
+} 
+.card__description { 
+ font-weight: 600; 
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 
+sans-serif; 
+ color: #00ffff; 
+ padding: 0px 10px; 
+} 
+.card { 
+ background-color: #1a2423; 
+ height: 100px; 
+ width: 250px; 
+ box-shadow: #00ffff 0px 0px 0px 3px inset,#1a2423 10px -10px 0px
+-3px , 
+ #1fc11b 10px -10px, #1a2423 20px -20px 0px -3px, 
+ #ffd913 20px -20px,#1a2423 30px -30px 0px -3px, 
+ #ff9c55 30px -30px,#1a2423 40px -40px 0px -3px, 
+ #ff5555 40px -40px; 
+} 
+.card:hover { 
+ animation: shadowAnimation 0.8s infinite ease; 
+} 
+@keyframes shadowAnimation { 
+ 20% { 
+ box-shadow:#ff5555 0px 0px 0px 3px inset,#1a2423 10px -10px
+0px -3px , 
+ #00ffff 10px -10px, #1a2423 20px -20px 0px -3px, 
+ #1fc11b 20px -20px,#1a2423 30px -30px 0px -3px, 
+ #ffd913 30px -30px,#1a2423 40px -40px 0px -3px, 
+ #ff9c55 40px -40px; 
+ } 
+ 40% { 
+ box-shadow:#ff9c55 0px 0px 0px 3px inset,#1a2423 10px -10px
+0px -3px , 
+ #ff5555 10px -10px, #1a2423 20px -20px 0px -3px, 
+ #00ffff 20px -20px,#1a2423 30px -30px 0px -3px, 
+ #1fc11b 30px -30px,#1a2423 40px -40px 0px -3px, 
+ #ffd913 40px -40px; 
+ } 
+ 60% { 
+ box-shadow:#ffd913 0px 0px 0px 3px inset,#1a2423 10px -10px
+0px -3px , 
+ #ff9c55 10px -10px, #1a2423 20px -20px 0px -3px, 
+ #ff5555 20px -20px,#1a2423 30px -30px 0px -3px, 
+ #00ffff 30px -30px,#1a2423 40px -40px 0px -3px, 
+ #1fc11b 40px -40px; 
+ } 
+ 80% { 
+ box-shadow: #1fc11b 0px 0px 0px 3px inset,#1a2423 10px -
+10px 0px -3px , 
+ #ffd913 10px -10px, #1a2423 20px -20px 0px -3px, 
+ #ff9c55 20px -20px,#1a2423 30px -30px 0px -3px, 
+ #ff5555 30px -30px,#1a2423 40px -40px 0px -3px, 
+ #00ffff 40px -40px; 
+ } 
+ 100% { 
+ box-shadow: #00ffff 0px 0px 0px 3px inset,#1a2423 10px -10px
+0px -3px , 
+ #1fc11b 10px -10px, #1a2423 20px -20px 0px -3px, 
+ #ffd913 20px -20px,#1a2423 30px -30px 0px -3px, 
+ #ff9c55 30px -30px,#1a2423 40px -40px 0px -3px, 
+ #ff5555 40px -40px; 
+ } 
+}
+
+OUTPUT:
+
+RESULT:
+Thus the gliding box using the css animation.
